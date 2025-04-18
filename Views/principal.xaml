@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KTIGSETS2.Views.principal"
+             Title="principal">
+    <VerticalStackLayout Padding="25" Spacing="20">
+        <Label  Text="TAREA SEMANA  2 - KEVIN TIGSE - SISTEMA DE CALIFICACIONES"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                TextColor="White"
+                BackgroundColor="Blue"
+                FontSize="30"/>
+
+        <Picker x:Name="pkEst" Title="ESTUDIANTES">
+            <Picker.Items>
+                <x:String>KEVIN TIGSE</x:String>
+                <x:String>CARLOS FLORES</x:String>
+                <x:String>JOEL HUARANDA</x:String>
+                <x:String>DANIEL JOSELU</x:String>
+                <x:String>PATRICIO TIPAN</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Entry  x:Name="txNotaS1"
+                Placeholder="INGRESE NOTA SEGUIMIENTO 1"
+                PlaceholderColor="Black"
+                TextChanged="txNotaS1_TextChanged">
+        </Entry>
+
+        <Entry  x:Name="txExaS1"
+                Placeholder="INGRESE NOTA EXAMEN S1"
+                PlaceholderColor="Black"
+                TextChanged="txExaS1_TextChanged">
+        </Entry>
+
+        <Entry  x:Name="txNotaS2"
+                Placeholder="INGRESE NOTA SEGUIMIENTO 2"
+                PlaceholderColor="Black"
+                TextChanged="txNotaS2_TextChanged">
+        </Entry>
+
+        <Entry  x:Name="txExaS2"
+                Placeholder="INGRESE NOTA EXAMEN S2"
+                PlaceholderColor="Black"
+                TextChanged="txExaS2_TextChanged">
+        </Entry>
+
+        <DatePicker x:Name="dpFec" Format="MM/dd/yyyy" >
+        </DatePicker>
+
+        <Label  x:Name="lblInfo"
+                FontSize="15"
+                TextColor="Red">
+        </Label>
+
+        <Button x:Name="btnAceptar"
+                Clicked="btnAceptar_Clicked"
+                Text="ACEPTAR">
+        </Button>
+
+
+    </VerticalStackLayout>
+</ContentPage>
