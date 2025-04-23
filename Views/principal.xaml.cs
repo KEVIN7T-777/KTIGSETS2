@@ -7,9 +7,10 @@ namespace KTIGSETS2.Views;
 
 public partial class principal : ContentPage
 {
-    public principal()
+    public principal(string user)
     {
         InitializeComponent();
+        lblUsu.Text = "USUARIO CONECTADO: " + user;
     }
 
     private void txNotaS1_TextChanged(object sender, TextChangedEventArgs e)

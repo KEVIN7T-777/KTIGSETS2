@@ -4,6 +4,11 @@
              x:Class="KTIGSETS2.Views.principal"
              Title="principal">
     <VerticalStackLayout Padding="25" Spacing="20">
+
+        <Label  x:Name="lblUsu"
+                HorizontalTextAlignment="End">
+        </Label>
+
         <Label  Text="TAREA SEMANA  2 - KEVIN TIGSE - SISTEMA DE CALIFICACIONES"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center"

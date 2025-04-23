@@ -4,10 +4,29 @@
              xmlns:local="clr-namespace:KTIGSETS2"
              x:Class="KTIGSETS2.App">
     <Application.Resources>
+
+        <!--ESTILO GLOBAL-->
+        <Style x:Key="styleGlobalLblTitulo" TargetType="Label">
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="TextColor" Value="White"></Setter>
+            <Setter Property="BackgroundColor" Value="Blue"></Setter>
+        </Style>
+
+        <Style x:Key="styleGlobalEntry" TargetType="Entry">
+            <Setter Property="PlaceholderColor" Value="Blue"></Setter>
+            <Setter Property="TextColor" Value="Black"></Setter>
+        </Style>
+
+        <Style x:Key="styleGlobalButton" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="Blue"></Setter>
+            <Setter Property="TextColor" Value="White"></Setter>
+            <Setter Property="FontSize" Value="25"></Setter>
+        </Style>
+
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
-                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+                <!--<ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />-->
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

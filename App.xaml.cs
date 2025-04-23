@@ -11,7 +11,8 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new Views.principal());
+            //PARA COMENZAR LA NAVEGACION: new NavigationPage
+            return new Window(new NavigationPage(new Views.login()));
         }
     }
 }
